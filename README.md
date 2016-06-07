@@ -1,10 +1,10 @@
 frontend-nanodegree-arcade-game
 ===============================
 
-- # **Getting Started**
+# **Getting Started**
 Right Click index.html in the file and open in your preferred browser.
 
-- ##* *Game Instructions**
+- ## **Game Instructions**
 Right now there are no lives or score. Try to pass the bugs and get to the water before the bugs touch you.
 
 - ## **Player**
