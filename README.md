@@ -10,6 +10,9 @@ Right now there are no lives or score. Try to pass the bugs and get to the water
 - ## **Player**
 Selecting a player has not been setup. The player is the default "Boy" character.
 
+- ## **How-to-Play**
+Use the Arrow keys to navigate to the other side. Watch out for bugs!
+
 - ## **License and Copyright**
 All material used were provided by Udacity for the Front End Web Developer nanodegree.
 
