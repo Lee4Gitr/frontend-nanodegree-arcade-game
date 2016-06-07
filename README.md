@@ -1,16 +1,16 @@
 frontend-nanodegree-arcade-game
 ===============================
 
--#**Getting Started**
+- # **Getting Started**
 Right Click index.html in the file and open in your preferred browser.
 
--##**Game Instructions**
+- ##* *Game Instructions**
 Right now there are no lives or score. Try to pass the bugs and get to the water before the bugs touch you.
 
--##**Player**
+- ## **Player**
 Selecting a player has not been setup. The player is the default "Boy" character.
 
--##**License and Copyright**
+- ## **License and Copyright**
 All material used were provided by Udacity for the Front End Web Developer nanodegree.
 
 Students should use this [rubric](https://www.udacity.com/course/viewer/#!/c-nd001/l-2696458597/m-2687128535) for self-checking their submission.
