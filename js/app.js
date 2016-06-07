@@ -1,10 +1,10 @@
 //help from kolysg and amytthompson on gitHub and kadi_231269 on the discussion forum
-var block_width = 101;
-var block_height = 120;
+var BLOCK_WIDTH = 101;
+var BLOCK_HEIGHT = 120;
 var edge_x = 450;
 var edge_y = 450;
 var pos_x = 202;
-var pos_y = 505 - block_height;
+var pos_y = 505 - BLOCK_HEIGHT;
 
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
@@ -51,17 +51,17 @@ var Player = function(x, y) {
     this.height = 78;
     this.width = 67;
     this.moveLeft = function() {
-        this.x -= block_width;
+        this.x -= BLOCK_WIDTH;
     };
     this.moveRight = function() {
-        this.x += block_width;
+        this.x += BLOCK_WIDTH;
     };
     this.moveUp = function() {
         this.y -= 82.5;
     };
     this.moveDown = function() {
         this.y += 82.5;
-    }
+    };
 };
 Player.prototype.update = function() {
     this.x = this.x;
@@ -86,8 +86,8 @@ Player.prototype.checkCollisions = function() {
             this.y >= allEnemies[i].y + 0 &&
             this.y < allEnemies[i].y + 44) {
             console.log('Splat!');
-            player.y += 20;
-            player.reset();
+            this.y += 20;
+            this.reset();
 
         }
     }
@@ -102,16 +102,16 @@ Player.prototype.handleInput = function(allowedKeys) {
             break;
 
         case 'up':
-            if (this.y > block_height) {
+            if (this.y > BLOCK_HEIGHT) {
                 console.log("up!");
                 this.moveUp();
-            } else if (this.y < block_height * 0.5) {
+            } else if (this.y < BLOCK_HEIGHT * 0.5) {
                 this.reset();
             }
             break;
 
         case 'right':
-            if (this.x + block_width < ctx.canvas.width - this.width) {
+            if (this.x + BLOCK_WIDTH < ctx.canvas.width - this.width) {
                 this.moveRight();
             }
             break;
